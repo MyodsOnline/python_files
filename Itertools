@@ -77,3 +77,17 @@ print(dr_wh, tk_wh)
 print('\n***compress(sequence, true/false_sequence)***')
 compress_list = list(itertools.compress(staff_list, [True, False, False, True, False]))
 print(compress_list)
+
+print('\n***accumulate(sequence, [function])***')
+acc_list = list(itertools.accumulate(numbers_list[:rep_cnt]))
+print(f'{rep_cnt} -> acc = {acc_list}')
+
+def acc_mltply(x, y):
+	return x * y
+	
+acc_list_mltply = list(itertools.accumulate(numbers_list[rep_cnt:], acc_mltply))
+print(f'acc_list_mltply -> {acc_list_mltply}')
+	
+print('\n***chain(sequence, ... [sequence])***')
+chain_list = list(itertools.chain(staff_list, main_staff, obj_list))
+print(len(chain_list), chain_list)
