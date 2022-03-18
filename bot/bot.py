@@ -5,11 +5,12 @@ import setup
 
 
 f = open('data/regim.txt', 'r', encoding='UTF-8')
-regim = f.read().split('\n')
+regim = f.read()
 f.close()
 
 f = open('data/orders.txt', 'r', encoding='UTF-8')
-orders = f.read().split('\n')
+# orders = f.read().split('\n')
+orders = f.read()
 f.close()
 
 f = open('data/ask.txt', 'r', encoding='UTF-8')
@@ -30,7 +31,7 @@ def start(m, res=False):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1 = types.KeyboardButton('📝 Оперативная работа')
     item2 = types.KeyboardButton('📕 Приказы')
-    item3 = types.KeyboardButton('👮‍ Атемий попросил')
+    item3 = types.KeyboardButton('👮‍ с Днём рождения!')
     markup.add(item1)
     markup.add(item2)
     markup.add(item3)
@@ -52,12 +53,12 @@ def handly_text(message):
         itm2 = types.InlineKeyboardButton('График', callback_data='schedule')
         markup.add(itm1, itm2)
 
-        bot.send_message(message.chat.id, 'fine!', reply_markup=markup)
+        bot.send_message(message.chat.id, 'Отлично! Уточни:', reply_markup=markup)
     elif message.text.strip() == '📕 Приказы':
         bot.send_message(message.chat.id, orders)
-    elif message.text.strip() == '👮‍ Атемий попросил':
-        bot.send_message(message.chat.id, random.choice(ask))
-        # answer = ask
+    elif message.text.strip() == '👮‍ с Днём рождения!':
+        bot.send_message(message.chat.id, ask)
+    #     # answer = ask
 
 
 @bot.callback_query_handler(func=lambda call: True)
