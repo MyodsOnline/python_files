@@ -1,8 +1,8 @@
 pr = '**********'
 #help(test)
-print(test.__doc__, test.test.__doc__)
-print(f'{"*"*10}')
-print(input.__doc__)
+# print(test.__doc__, test.test.__doc__)
+# print(f'{"*"*10}')
+# print(input.__doc__)
 
 
 d = {'x':1, 'y':2}
