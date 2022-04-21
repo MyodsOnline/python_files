@@ -56,9 +56,37 @@ Create a function that takes an integer as an argument and returns "Even" for ev
 """
 
 
-def even_or_odd(number):
-    return 'Even' if number % 2 == 0 else 'Odd'
+# def even_or_odd(number):
+#     return 'Even' if number % 2 == 0 else 'Odd'
 
 """
+You get an array of numbers, return the sum of all of the positives ones.
+"""
+
+
+# def positive_sum(arr):
+#     return sum([x for x in arr if x > 0])
 
 """
+Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+"""
+
+
+# def invert(lst):
+#     return [-x for x in lst]
+
+"""
+Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+"""
+
+
+def move_zeros(array):
+    zeros, others = [], []
+    for i in array:
+        if i == 0:
+            zeros.append(i)
+        else:
+            others.append(i)
+    array = others + zeros
+    return array
+
