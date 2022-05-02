@@ -80,13 +80,93 @@ Write an algorithm that takes an array and moves all of the zeros to the end, pr
 """
 
 
-def move_zeros(array):
-    zeros, others = [], []
-    for i in array:
-        if i == 0:
-            zeros.append(i)
-        else:
-            others.append(i)
-    array = others + zeros
-    return array
+# def move_zeros(array):
+#     zeros, others = [], []
+#     for i in array:
+#         if i == 0:
+#             zeros.append(i)
+#         else:
+#             others.append(i)
+#     array = others + zeros
+#     return array
 
+"""
+Create a countdown timer.
+"""
+
+import time
+
+def countdown(time_sec):
+    while time_sec:
+        mins, sec = divmod(time_sec, 60)
+        timeformat = f'{mins:02d}:{sec:02d}'
+        print(timeformat, end="\r")
+        time.sleep(1)
+        time_sec -= 1
+
+    print('Timer ended!')
+
+# countdown(3)
+
+
+"""
+An isogram is a word that has no repeating letters, consecutive or non-consecutive. 
+Implement a function that determines whether a string that contains only letters is an isogram. 
+Assume the empty string is an isogram. Ignore letter case.
+"""
+
+
+def is_isogram(string):
+        # noob way:
+    # set_string = set(string.lower())
+    # if len(set_string) == len(string):
+    #     return True
+    # else:
+    #     return False
+
+        # master way:
+    return len(string) == len(set(string.lower()))
+
+        # another way
+    # new_string = string.lower()
+    # for letter in new_string:
+    #     if letter.count(new_string) > 1:
+    #         return False
+    # return True
+
+#is_isogram('Uuto')
+
+"""
+Take 2 strings s1 and s2 including only letters from ato z. 
+Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
+"""
+
+
+def longest(a1, a2):
+    return "".join(sorted(set(a1) | set(a2)))
+
+a1 = "xyaabbbccccdefww"
+a2 = "xxxxyyyyabklmopq"
+
+longest(a1, a2)
+
+"""
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. 
+Return the resulting string.
+"""
+
+
+def fake_bin(x):
+    # # noob way
+    # output = str()
+    # for el in x:
+    #     if int(el) < 5:
+    #         output += '0'
+    #     else:
+    #         output += '1'
+    # return output
+
+    # # master way
+    return ''.join('0' if int(el) < 5 else '1' for el in x)
+
+fake_bin('1345478554')
