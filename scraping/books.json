@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "name": "кЛИБЕ. Конец иллюзии стадной безопасности (флипбук)",
+    "author": "Вадим Зеланд",
+    "href": "/book/klibe-konets-illyuzii-stadnoy-bezopasnosti-flipbuk-ITD327468/"
+  },
+  {
+    "id": 2,
+    "name": "Альтист Данилов",
+    "author": "Владимир Орлов",
+    "href": "/book/altist-danilov-ITD895001/"
+  },
+  {
+    "id": 3,
+    "name": "Креативный леттеринг и не только. Вдохновляющие советы, техники и идеи, которые помогут вам создать потрясающие работы своими руками",
+    "author": null,
+    "href": "/book/kreativnyy-lettering-i-ne-tolko-vdokhnovlyayushchie-sovety-tekhniki-i-idei-kotorye-pomogut-vam-sozda-ITD907822/"
+  },
+  {
+    "id": 4,
+    "name": "Дар дождя",
+    "author": "Тан Тван Энг",
+    "href": "/book/dar-dozhdya-ITD917806/"
+  },
+  {
+    "id": 5,
+    "name": "Фамильные ценности, или Возврату не подлежит",
+    "author": "Олег Рой",
+    "href": "/book/familnye-tsennosti-ili-vozvratu-ne-podlezhit-ITD808911/"
+  },
+  {
+    "id": 6,
+    "name": "Елена Рерих",
+    "author": null,
+    "href": "/book/elena-rerikh-ITD631742/"
+  },
+  {
+    "id": 7,
+    "name": "Принц Хаоса",
+    "author": "Роджер Желязны",
+    "href": "/book/prints-khaosa-ITD886964/"
+  },
+  {
+    "id": 8,
+    "name": "Праздничные блюда. Из мяса, птицы, рыбы",
+    "author": "Е. Молоховец",
+    "href": "/book/prazdnichnye-osnovnye-blyuda-ITD923886/"
+  },
+  {
+    "id": 9,
+    "name": "Таинство любви",
+    "author": "Барбара Картленд",
+    "href": "/book/tainstvo-lyubvi-ITD940752/"
+  },
+  {
+    "id": 10,
+    "name": "Графство Эссекс. Том 2. Истории о призраках",
+    "author": "Джефф Лемир",
+    "href": "/book/grafstvo-esseks-tom-2-istorii-o-prizrakakh-ITD1223626/"
+  },
+  {
+    "id": 11,
+    "name": "Маша минус Вася, или Новый матриархат",
+    "author": "Дмитрий Емец",
+    "href": "/book/masha-minus-vasya-ili-novyy-matriarkhat-ITD884733/"
+  },
+  {
+    "id": 12,
+    "name": "Перезагрузка: как повысить качество жизни",
+    "author": "Сергей Бубновский",
+    "href": "/book/perezagruzka-kak-povysit-kachestvo-zhizni-ITD887098/"
+  },
+  {
+    "id": 13,
+    "name": "Боги и герои. Мифы Древней Греции",
+    "author": "Н.А. Кун",
+    "href": "/book/mify-drevney-gretsii-bogi-i-geroi-u-n--ITD907414/"
+  },
+  {
+    "id": 14,
+    "name": "Гамлет",
+    "author": "Уильям Шекспир",
+    "href": "/book/gamlet-ITD907632/"
+  },
+  {
+    "id": 15,
+    "name": "Всё о женских гормонах",
+    "author": "Сергей Агапкин",
+    "href": "/book/vsye-o-zhenskikh-gormonakh-ITD883487/"
+  },
+  {
+    "id": 16,
+    "name": "Драконьи когти",
+    "author": "Денис Кащеев",
+    "href": "/book/drakoni-kogti-ITD899039/"
+  },
+  {
+    "id": 17,
+    "name": "Маленькая голубая вещица",
+    "author": "С. К. Ренсом",
+    "href": "/book/malenkaya-golubaya-veshchitsa-ITD943519/"
+  },
+  {
+    "id": 18,
+    "name": "Ромашки. Тетрадь в мягкой пластиковой обложке, А5, 80л.",
+    "author": null,
+    "href": "/book/romashki-tetrad-v-myagkoy-plastikovoy-oblozhke-a5-80l-ITD1058734/"
+  },
+  {
+    "id": 19,
+    "name": "Космология монстров",
+    "author": "Шон Хэмилл",
+    "href": "/book/kosmologiya-monstrov-ITD1093431/"
+  },
+  {
+    "id": 20,
+    "name": "Только хорошие индейцы",
+    "author": "Стивен Грэм Джонс",
+    "href": "/book/tolko-khoroshie-indeytsy-ITD1111710/"
+  },
+  {
+    "id": 21,
+    "name": "Обреченная",
+    "author": "Элизабет Силвер",
+    "href": "/book/obrechennaya-ITD911456/"
+  },
+  {
+    "id": 22,
+    "name": "EQ. Эмоциональный интеллект на практике. Как управлять своими эмоциями и не позволять им управлять вами",
+    "author": "Джастин Барисо",
+    "href": "/book/emotsionalnyy-intellekt-ITD952660/"
+  },
+  {
+    "id": 23,
+    "name": "Кактус. Никогда не поздно зацвести",
+    "author": "Сара Хейвуд",
+    "href": "/book/kaktus-nikogda-ne-pozdno-zatsvesti-ITD975341/"
+  },
+  {
+    "id": 24,
+    "name": "Блог проказника домового",
+    "author": "Дарья Донцова",
+    "href": "/book/blog-prokaznika-domovogo-ITD885164/"
+  },
+  {
+    "id": 25,
+    "name": "Реши сам! (+ наклейки)",
+    "author": null,
+    "href": "/book/my-igraem-nakleyki-ITD1028344/"
+  },
+  {
+    "id": 26,
+    "name": "Грузовые машины",
+    "author": null,
+    "href": "/book/gruzovye-mashiny-ITD1058736/"
+  },
+  {
+    "id": 27,
+    "name": "Монстр",
+    "author": "Лена Обухова",
+    "href": "/book/monstr-ITD1138400/"
+  },
+  {
+    "id": 28,
+    "name": "Готовим в мультиварке. Кулинарная книга лентяйки (серийная)",
+    "author": "Донцова Д.А.",
+    "href": "/book/gotovim-v-multivarke-kulinarnaya-kniga-lentyayki-seriynaya-ITD310484/"
+  },
+  {
+    "id": 29,
+    "name": "Книга о душе. Аструс. Идущие по пустыне",
+    "author": "Татьяна и Виталий Тихоплав и Юрий Кретов",
+    "href": "/book/kniga-o-dushe-astrus-idushchie-po-pustyne-ITD580635/"
+  },
+  {
+    "id": 30,
+    "name": "Закончи эту книгу!(англ.название)",
+    "author": "Кери Смит",
+    "href": "/book/zakonchi-etu-knigu-angl-nazvanie-ITD607365/"
+  },
+  {
+    "id": 31,
+    "name": "Мужчины как они есть",
+    "author": "Гибсон Тайрииз",
+    "href": "/book/muzhchiny-kak-oni-est-ITD630889/"
+  },
+  {
+    "id": 32,
+    "name": "Моя русская кухня",
+    "author": "Елена Глебова",
+    "href": "/book/moya-russkaya-kukhnya-ITD725151/"
+  },
+  {
+    "id": 33,
+    "name": "Уничтожь меня! Уникальный блокнот для творческих людей (цементная обложка)",
+    "author": "Кери Смит",
+    "href": "/book/unichtozh-menya-unikalnyy-bloknot-dlya-tvorcheskikh-lyudey-tsementnaya-oblozhka-ITD812243/"
+  },
+  {
+    "id": 34,
+    "name": "Самый безумный из маршрутов",
+    "author": "Матис А.",
+    "href": "/book/samyy-bezumnyy-iz-marshrutov-ITD845080/"
+  },
+  {
+    "id": 35,
+    "name": "Сила упрощения. Ключ к достижению феноменального рывка в карьере и бизнесе",
+    "author": "Ричард Кох",
+    "href": "/book/uproshchay-ITD850573/"
+  },
+  {
+    "id": 36,
+    "name": "Легенды хоккейного ЦСКА",
+    "author": "Алексей Матвеев",
+    "href": "/book/legendy-khokkeynogo-tsska-ITD850692/"
+  }
+]

@@ -40,7 +40,6 @@ Return an array, where the first element is the count of positives numbers and t
 If the input is an empty array or is null, return an empty array.
 """
 
-
 # def count_positives_sum_negatives(arr):
 #     final = []
 #     if arr:
@@ -55,14 +54,12 @@ If the input is an empty array or is null, return an empty array.
 Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 """
 
-
 # def even_or_odd(number):
 #     return 'Even' if number % 2 == 0 else 'Odd'
 
 """
 You get an array of numbers, return the sum of all of the positives ones.
 """
-
 
 # def positive_sum(arr):
 #     return sum([x for x in arr if x > 0])
@@ -71,14 +68,12 @@ You get an array of numbers, return the sum of all of the positives ones.
 Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
 """
 
-
 # def invert(lst):
 #     return [-x for x in lst]
 
 """
 Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
 """
-
 
 # def move_zeros(array):
 #     zeros, others = [], []
@@ -96,6 +91,7 @@ Create a countdown timer.
 
 import time
 
+
 def countdown(time_sec):
     while time_sec:
         mins, sec = divmod(time_sec, 60)
@@ -105,6 +101,7 @@ def countdown(time_sec):
         time_sec -= 1
 
     print('Timer ended!')
+
 
 # countdown(3)
 
@@ -117,24 +114,25 @@ Assume the empty string is an isogram. Ignore letter case.
 
 
 def is_isogram(string):
-        # noob way:
+    # noob way:
     # set_string = set(string.lower())
     # if len(set_string) == len(string):
     #     return True
     # else:
     #     return False
 
-        # master way:
+    # master way:
     return len(string) == len(set(string.lower()))
 
-        # another way
+    # another way
     # new_string = string.lower()
     # for letter in new_string:
     #     if letter.count(new_string) > 1:
     #         return False
     # return True
 
-#is_isogram('Uuto')
+
+# is_isogram('Uuto')
 
 """
 Take 2 strings s1 and s2 including only letters from ato z. 
@@ -144,6 +142,7 @@ Return a new sorted string, the longest possible, containing distinct letters - 
 
 def longest(a1, a2):
     return "".join(sorted(set(a1) | set(a2)))
+
 
 a1 = "xyaabbbccccdefww"
 a2 = "xxxxyyyyabklmopq"
@@ -169,4 +168,51 @@ def fake_bin(x):
     # # master way
     return ''.join('0' if int(el) < 5 else '1' for el in x)
 
-fake_bin('1345478554')
+
+# fake_bin('1345478554')
+
+"""
+Move the first letter of each word to the end of it, then add "ay" to the end of the word. 
+Leave punctuation marks untouched.
+"""
+
+
+def pig_latin(text):
+    # # noob way
+    # list_string = text.split(" ")
+    # pig_string = list()
+    # exception_list = [',', '.', '!', '?', ':']
+    # for word in list_string:
+    #     if word in exception_list:
+    #         pig_string.append(word)
+    #     else:
+    #         word = word[1:] + word[0] +'ay'
+    #         pig_string.append(word)
+    # return ' '.join(pig_string)
+
+    # master way
+    lst = text.split()
+    return ' '.join([word[1:] + word[:1] + 'ay' if word.isalpha() else word for word in lst])
+
+"""
+
+"""
+
+
+def same_structure_as(original, other):
+    if len(original) != len(other):
+        return False
+    for el in range(0, len(original)):
+        if type(original[el]) != type(other[el]):
+            return False
+        elif type(original[el]) == type(other[el]) == list:
+            if len(original[el]) != len(other[el]):
+                return False
+            else:
+                continue
+        else:
+            continue
+    return True
+
+
+same_structure_as([1, [1, 1], 1], [2, [2, 2], 2])
