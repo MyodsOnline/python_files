@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 task: parse the web page
 """
 
-url_exmo = requests.get('https://eksmo.ru/sales/stock/')
+url_exmo = requests.get('https://eksmo.ru/novinki/')
 print(f'status code - {url_exmo.status_code}')
 
 code_exmo = BeautifulSoup(url_exmo.content, 'html.parser')

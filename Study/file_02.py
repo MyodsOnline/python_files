@@ -215,4 +215,35 @@ def same_structure_as(original, other):
     return True
 
 
-same_structure_as([1, [1, 1], 1], [2, [2, 2], 2])
+#same_structure_as([1, [1, 1], 1], [2, [2, 2], 2])
+
+"""
+Ways to convert a Boolean to a String
+"""
+
+
+def boolean_to_string_1(b):
+    return str(b)
+
+def boolean_to_string_2(b):
+    return 'True' if b else 'False'
+
+def boolean_to_string_3(b):
+    if b:
+        return "True"
+    return "False"
+
+def boolean_to_string_4(b):
+    return ('False', 'True')[b]
+
+def boolean_to_string_5(b):
+    if b == True or b == False:
+        return str(b)
+
+boolean_to_string_6 = lambda x: "True" if x else "False"
+
+def boolean_to_string_7(b):
+    d = {True: "True", False: "False"}
+    return d[b]
+
+print(boolean_to_string_4(True))

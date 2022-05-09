@@ -4,3 +4,4 @@
 env/
 /bot/setup.py
 /bot/data/
+/scraping/webinar_day_1.py
