@@ -3,25 +3,27 @@ Write a function to convert a name into initials. This kata strictly takes two w
 The output should be two capital letters with a dot separating them.
 """
 
-# def abbrev_name(name):
-#     # return f'{name.split()[0][0].upper()}.{name.split()[1][0].upper()}'
-#     return '.'.join(i[0] for i in name.split()).upper()
-#
-#
+
+def abbrev_name(name):
+    # return f'{name.split()[0][0].upper()}.{name.split()[1][0].upper()}'
+    return '.'.join(i[0] for i in name.split()).upper()
+
+
 # print(abbrev_name('john smith first'))
 
 """
 This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
 """
 
-# def simple_multiplication(number):
-#     try:
-#         number = int(number)
-#         return number * 8 if (number % 2 == 0) else number * 9
-#     except ValueError:
-#         return 'wrong data'
-#
-#
+
+def simple_multiplication(number):
+    try:
+        number = int(number)
+        return number * 8 if (number % 2 == 0) else number * 9
+    except ValueError:
+        return 'wrong data'
+
+
 # print(simple_multiplication(262))
 
 """
@@ -29,10 +31,11 @@ Your classmates asked you to copy some paperwork for them. You know that there a
 Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
 """
 
-# def paperwork(n, m):
-#     return 0 if (n < 0 or m < 0) else n * m
-#
-#
+
+def paperwork(n, m):
+    return 0 if (n < 0 or m < 0) else n * m
+
+
 # print(paperwork(4, -4))
 
 """
