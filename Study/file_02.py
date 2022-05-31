@@ -147,7 +147,7 @@ def longest(a1, a2):
 a1 = "xyaabbbccccdefww"
 a2 = "xxxxyyyyabklmopq"
 
-longest(a1, a2)
+# longest(a1, a2)
 
 """
 Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. 
@@ -246,4 +246,48 @@ def boolean_to_string_7(b):
     d = {True: "True", False: "False"}
     return d[b]
 
-print(boolean_to_string_4(True))
+# print(boolean_to_string_4(True))
+
+"""
+Complete the solution so that the function will break up camel casing, using a space between words.
+"""
+
+def solution(s):
+    return "".join([" " + c if c.isupper() else c for c in s])
+
+# print(solution('someText'))
+
+"""
+create a decorator for calculating the runtime of a function
+"""
+
+import time
+
+def timer(func):
+    def wrapper(*args):
+        start = time.time()
+        value = func(*args)
+        finish = time.time()
+        print(f'time for function "{func.__name__}": {round(finish - start, 2)} sec.')
+        return value
+    return wrapper
+
+
+@timer
+def list_make_1(idx):
+    list_1 = []
+    for i in range(idx):
+        list_1.append(i)
+    return list_1
+
+
+@timer
+def list_make_2(idx):
+    return [i for i in range(idx)]
+
+
+val = 10 ** 6
+
+if __name__ == '__main__':
+    list_make_1(val)
+    list_make_2(val)
