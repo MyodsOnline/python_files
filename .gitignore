@@ -5,3 +5,4 @@ env/
 /bot/setup.py
 /bot/data/
 /scraping/webinar_day_1.py
+/book_projects/make_copy/client.log
