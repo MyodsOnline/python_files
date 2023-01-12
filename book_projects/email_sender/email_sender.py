@@ -4,8 +4,8 @@ from email.mime.multipart import MIMEMultipart
 
 # https://www.abstractapi.com/guides/sending-email-with-python
 
-gmail_user = 'diver.vlz@gmail.com'
-gmail_password = '5z7AQd!Z#m'
+gmail_user = 'get_address_from_env'
+gmail_password = 'get_pass_from_env'
 
 sent_from = gmail_user
 sent_to = ['diver.vlz@gmail.com']
