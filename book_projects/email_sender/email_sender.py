@@ -9,7 +9,7 @@ gmail_password = 'get_pass_from_env'
 
 sent_from = gmail_user
 sent_to = ['diver.vlz@gmail.com']
-subject = 'Test message'
+subject = 'Test message title'
 body = 'Test message body'
 
 message = MIMEMultipart()

@@ -53,7 +53,7 @@ class Item:
         return f'Item("{self.name}, {self.price}, {self.qty}")'
 
 
-# Item.instance_from_csv()
-# print(Item.all_items)
+Item.instance_from_csv()
+print(Item.all_items)
 
 print(Item.is_integer(7.0))
