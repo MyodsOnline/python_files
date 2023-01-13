@@ -13,7 +13,7 @@ class Item:
         assert qty >= 0, f'Quantity {qty} is not valid'
 
         # assign to self object
-        self.name = name
+        self.__name = name
         self.price = price
         self.qty = qty
 
@@ -49,33 +49,18 @@ class Item:
         else:
             return False
 
+    @property
+    def name(self):
+        print('Try to get name')
+        return self.__name
+
+    @name.setter
+    def name(self, value):
+        print('Try to set name')
+        if len(value) > 10:
+            raise Exception('Name is too long')
+        else:
+            self.__name = value
+
     def __repr__(self):
-        return f'Item("{self.name}, {self.price}, {self.qty}")'
-
-
-Item.instance_from_csv()
-# print(Item.all_items)
-#
-# print(Item.is_integer(7.0))
-
-
-class Phone(Item):  # child class for Item class
-
-    all_phones = []
-
-    def __init__(self, name, price, qty, broken_items=0):
-        # Call a attrs and methods of super-class
-        super().__init__(name, price, qty)
-        # Check for curr class
-        assert broken_items >= 0, f'Check for broken items failed'
-        # Describe unique attrs
-        self.broken_items = broken_items
-
-        Phone.all_phones.append(self)
-
-
-phone1 = Phone('ChildPhone', 700, 5, 2)
-# print(phone1.calculate_total_price())
-
-print(Item.all_items)
-print(Phone.all_phones)
+        return f'Item("{self.__name}, {self.price}, {self.qty}")'
