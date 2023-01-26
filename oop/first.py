@@ -14,6 +14,3 @@ class PCUS:
     def PCUS_off(self):
         print(f'{self.name} is off')
 
-
-first_PCUS = PCUS(123, 'PS Vostocnaya')
-first_PCUS.PCUS_on()
