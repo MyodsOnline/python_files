@@ -1,4 +1,5 @@
 import csv
+import timeit
 
 
 class Item:
@@ -79,3 +80,15 @@ phone1 = Phone('ChildPhone', 700, 5, 2)
 
 print(Item.all_items)
 print(Phone.all_phones)
+
+
+class SlotsClass():
+    __slots__ = ('FIRST', 'ANOTHER')
+
+class FooClass(): pass
+
+obj = SlotsClass()
+obj.FIRST = 'Elvis has left the building'
+print(obj.FIRST)
+
+# obj.another_attribute = "Error: object has no attribute 'another_attribute'"
