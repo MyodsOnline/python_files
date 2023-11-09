@@ -2,7 +2,7 @@ import csv
 import json
 import os.path
 
-PATH = os.path.join('K:\disp_sl\ЛИЧНЫЕ ПАПКИ ОДС\Кузнецов\Excel\Заявки', 'all.csv')
+PATH = os.path.join('Work/kuznecov_a/Test_data/', 'all.csv')
 
 
 def parse_data_from_csv():

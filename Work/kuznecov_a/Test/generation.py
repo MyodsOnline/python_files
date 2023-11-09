@@ -1,6 +1,7 @@
 import datetime
 import pprint
 import os
+from tabulate import tabulate
 
 """
 Используются модули:
@@ -38,11 +39,15 @@ def get_all_gen_apps():
         for key, val in power_plants_apps.items():
             file.write(f'\n{delimiter}\n')
             file.write(f"{key.upper()} ({len(val)})\n")
+            if len(val) > 0:
+                print(f">>> {key.upper()} ({len(val)})\n", end='')
 
             for el in power_plants_apps[key]:
                 if el['zvk_status'] == 'Открытая':
                     file.write(f"{el['self_number']:5}) {el['equipment']:10} {el['equipment_detail']} {el['repair_type']} "
                                f"{el['zvk_status']:10} до {el['end_date']}\n")
+                    print(f"{el['self_number']:5}) {el['equipment']:10} {el['equipment_detail']} {el['repair_type']} "
+                               f"{el['zvk_status']:10} до {el['end_date']}\n", end='')
                 elif el['zvk_status'] == 'Разрешенная':
                     file.write(f"{el['self_number']:5}) {el['equipment']:10} {el['equipment_detail']} {el['repair_type']} "
                                f"{el['zvk_status']:10} c {el['start_date']}\n")
