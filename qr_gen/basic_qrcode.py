@@ -27,7 +27,7 @@ def get_qr(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1 = types.KeyboardButton('Get my QR-code')
     markup.add(item1)
-    # print(message.text)
+    print(message.text)
     # if message.text.strip() == 'Get my QR-code':
     #     bot.send_message(message.chat.id, f'Получи {tmp}', reply_markup=start_message())
     #     # bot.send_photo(message.chat.id, )
