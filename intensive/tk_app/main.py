@@ -6,7 +6,7 @@ from csv_parse import parse_csv
 
 
 window = tk.Tk()
-window.geometry('600x800+100+100')
+window.geometry('626x800+100+100')
 window.title('Tkinter apps app')
 window.minsize(600, 800)
 # window.overrideredirect(True)
@@ -19,9 +19,13 @@ def open_path():
 
 
 def get_file_name():
-    output_label.config(text=f'{parse_csv(path.get())} from file "{os.path.basename(path.get())}"')
+    date, gen_list = parse_csv(path.get())
+    output_label.config(text=f'{date} from file "{os.path.basename(path.get())}"')
     entry_path.delete(0, 'end')
     path.set('')
+    table.grid(row=1, column=0, padx=0)
+    for item in gen_list:
+        table.insert(parent='', index=0, values=(item['subject'], item['equipment'], item['zvk_status']))
 
 
 # file input area
@@ -55,11 +59,16 @@ output_area = ttk.Labelframe(
     master=window,
     text='View file data',
     padding=5)
-output_area.pack(fill='x', padx=5, pady=5)
+output_area.pack(fill='both', padx=5, pady=5)
 output_area.columnconfigure(1, weight=1)
 
 output_label = ttk.Label(master=output_area, anchor='c', font='TkTextFont 12')
-output_label.grid(row=0, column=0, sticky='w')
+output_label.grid(row=0, column=0, sticky='w', pady=2)
+
+table = ttk.Treeview(output_area, columns=('first', 'last', 'third'), show='headings', height=20)
+table.heading('first', text='Item')
+table.heading('last', text='App')
+table.heading('third', text='Status')
 
 
 # service buttons area
