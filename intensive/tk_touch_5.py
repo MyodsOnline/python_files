@@ -12,6 +12,9 @@ window.title('Combobox widget')
 first_names = ['SLKJ', 'aslkdj', 'sdkjfh', 'askldj', 'qweqw', 'qweasd']
 last_names = ['234', '345346', '2342', '2345345', '122', '3242']
 
+
+
+
 # treeview
 table = ttk.Treeview(window, columns=('first', 'last', 'email'), show='headings')
 table.heading('first', text='First name')
