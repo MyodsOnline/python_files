@@ -83,9 +83,12 @@ scheme_selection_area.rowconfigure(0, weight=1, uniform='a')
 scheme_selection_area.rowconfigure(1, weight=int(len(m_2_list)), uniform='a')
 scheme_selection_area.pack(fill='x', padx=5, pady=5, )
 
-ttk.Label(scheme_selection_area, background='#F0E68C', text='First').grid(row=0, column=0)
-ttk.Label(scheme_selection_area, background='#E0E68C', text='Second').grid(row=0, column=1)
-ttk.Label(scheme_selection_area, background='#A0E68C', text='Third').grid(row=0, column=2)
+ttk.Label(scheme_selection_area, background='#F0E68C', text='Схема транзита 220 кВ')\
+    .grid(row=0, column=0, sticky='nesw')
+ttk.Label(scheme_selection_area, background='#E0E68C', text='Элемент, на котором производятся переключения')\
+    .grid(row=0, column=1, sticky='nesw', padx=5)
+ttk.Label(scheme_selection_area, background='#A0E68C', text='Прочие отклонения от нормальной схемы')\
+    .grid(row=0, column=2, sticky='nesw')
 
 style = ttk.Style()
 style.configure('TRadiobutton', anchor='nw', padding=3)
