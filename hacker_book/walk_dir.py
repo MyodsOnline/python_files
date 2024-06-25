@@ -1,10 +1,16 @@
 import os
+import py7zr
 
-base_path = f'/Users/diver.vlz/Documents/working_directory/python_files/'
+base_path = os.path.join(os.path.dirname(__file__), 'Good')
 # PATH = r"\\srv-smzu2-sz\CFRAS\FilesRegim\Good"
 
 
 def scan_basedir(path: str) -> list:
+    """
+    Функция возвращает список папок по заданному пути.
+    :param path: путь к директории
+    :return: список папок внутри директории
+    """
     try:
         first_level_dirs = []
         with os.scandir(path) as base_dir:
@@ -26,10 +32,10 @@ def scan_subdirectories(path, directory_name):
         try:
             with os.scandir(subdir_path) as directory:
                 for entry in directory:
-                    if entry.is_dir():
-                        print(entry.name)
-                    else:
-                        print(f'\tOther files: {entry.name}')
+                    if entry.is_dir() and not entry.name.startswith('.'):
+                        print(f'\tSubdirectory name: {entry.name}')
+                    elif not entry.name.startswith('.'):
+                        print(f'\t\tOther files: {entry.name}')
         except FileNotFoundError:
             print(f'Directory "{subdir_path}" does not exist.')
     else:
@@ -41,14 +47,20 @@ def print_directories():
     if first_level_dir:
         for dir_name in first_level_dir:
             print(dir_name)
-        user_input = input('Enter data: ')
-        if user_input in first_level_dir:
-            print(f'Subdirectories of {user_input}:')
-            scan_subdirectories(base_path, user_input)
-        else:
-            print(f'Directory {user_input} not found')
+            scan_subdirectories(base_path, dir_name)
+        # user_input = input('Enter data: ')
+        # if user_input in first_level_dir:
+        #     print(f'Subdirectories of {user_input}:')
+        #     scan_subdirectories(base_path, user_input)
+        # else:
+        #     print(f'Directory {user_input} not found')
     else:
         print(f'No first level directories found')
+
+
+def print_file_path():
+    PATH = os.path.join(os.path.dirname(__file__), 'Good')
+    scan_basedir(PATH)
 
 
 if __name__ == '__main__':
