@@ -12,3 +12,4 @@ env/
 /db_connection/settings.py
 /qr_gen/data/
 /scraping/settings/
+/hacker_book/Good/
