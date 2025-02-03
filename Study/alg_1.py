@@ -151,4 +151,11 @@ def find_max_val(arr: list) -> int:
             arr.pop(1)
             return find_max_val(arr)
 
-print(find_max_val(unordered_list))
+# print(find_max_val(unordered_list))
+
+
+def sum_elements(arr: list):
+    if len(arr) == 0:
+        return None
+    else:
+        pass
